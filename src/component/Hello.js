@@ -1,23 +1,19 @@
 import { useState } from "react";
 
-export default function Hello() {
+export default function Hello(props) {
+    console.log(props)
     const [name, setName] = useState('Mike');
-
-    // function changeName() {
-    //     const newName = name === 'Mike' ? 'Jane' : 'Mike';
-    //     setName(newName);
-    // };
+    const [age, setAge] = useState(props.age);
 
     return (
         <div>
-            {/* <h1>state</h1>
-            <h2>컴포넌트 속성값</h2> */}
-            <h3 id='name'>{name}</h3>
-            {/* <button onClick={changeName}>Change</button> */}
-            <button onClick={() => {
-                setName(name === 'Mike' ? 'Jane' : 'Mike'
-                )
-            }}>Change</button>
+            <h3 id='name'>{name} ({age})</h3>
+            <button
+                onClick={() => {
+                    setName(name === 'Mike' ? 'Jane' : 'Mike');
+                    setAge(age + 1);
+                }}
+            >Change</button>
         </div>
     );
 };
