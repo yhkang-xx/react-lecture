@@ -23,6 +23,10 @@
     {
       "day": 6,
       "id": 6
+    },
+    {
+      "day": 7,
+      "id": 7
     }
   ],
   "words": [
@@ -83,13 +87,6 @@
       "id": 13
     },
     {
-      "day": "5",
-      "eng": "test",
-      "kor": "시험핟",
-      "isDone": false,
-      "id": 14
-    },
-    {
       "day": "6",
       "eng": "one",
       "kor": "하나",
@@ -97,18 +94,32 @@
       "id": 15
     },
     {
-      "day": "6",
-      "eng": "two",
-      "kor": "둘",
+      "day": "7",
+      "eng": "for",
+      "kor": "~를 위한",
       "isDone": false,
-      "id": 16
+      "id": 18
+    },
+    {
+      "day": "1",
+      "eng": "window",
+      "kor": "창문",
+      "isDone": false,
+      "id": 19
     },
     {
       "day": "6",
-      "eng": "3",
-      "kor": "3",
+      "eng": "test",
+      "kor": "1",
       "isDone": false,
-      "id": 17
+      "id": 20
+    },
+    {
+      "day": "2",
+      "eng": "1",
+      "kor": "1",
+      "isDone": false,
+      "id": 21
     }
   ]
 }
