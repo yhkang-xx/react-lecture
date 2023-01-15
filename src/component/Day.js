@@ -1,22 +1,10 @@
-import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import Word from './Word';
-
+import useFetch from '../hooks/useFetch';
 
 export default function Day() {
 	const { day } = useParams(); // const day = useParams().day;
-	const [words, setWords] = useState([]);
-
-	useEffect(() => {
-		fetch(`http://localhost:3001/words?day=${day}`)
-			.then(res => {
-				return res.json();
-			})
-			.then(data => {
-				setWords(data);
-			});
-	}, [day]);	// []는 1회만 실행시키고자 할 때
-
+	const words = useFetch(`http://localhost:3001/words?day=${day}`);
 
 	return (
 		<>
