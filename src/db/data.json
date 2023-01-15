@@ -19,6 +19,10 @@
     {
       "day": 5,
       "id": 5
+    },
+    {
+      "day": 6,
+      "id": 6
     }
   ],
   "words": [
@@ -56,6 +60,41 @@
       "kor": "손",
       "isDone": false,
       "id": 10
+    },
+    {
+      "day": "4",
+      "eng": "apple",
+      "kor": "사과",
+      "isDone": false,
+      "id": 11
+    },
+    {
+      "day": "5",
+      "eng": "window",
+      "kor": "창문",
+      "isDone": false,
+      "id": 12
+    },
+    {
+      "day": "5",
+      "eng": "infomation",
+      "kor": "정보",
+      "isDone": false,
+      "id": 13
+    },
+    {
+      "day": "5",
+      "eng": "test",
+      "kor": "시험핟",
+      "isDone": false,
+      "id": 14
+    },
+    {
+      "day": "6",
+      "eng": "one",
+      "kor": "하나",
+      "isDone": false,
+      "id": 15
     }
   ]
 }
