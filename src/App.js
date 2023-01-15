@@ -3,7 +3,14 @@ import DayList from './component/DayList';
 import Day from './component/Day';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
+/**
+ * REST API
+ * 
+ * Create : POST
+ * Read: GET
+ * Update : PUT
+ * Delete : DELETE
+ */
 
 function App() {
 	return (

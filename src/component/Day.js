@@ -1,21 +1,29 @@
-import dummy from '../db/data.json';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import Word from './Word';
 
 
 export default function Day() {
-	// dummy.words
-	// const day = useParams().day;
-	const { day } = useParams();
+	const { day } = useParams(); // const day = useParams().day;
+	const [words, setWords] = useState([]);
 
-	const wordList = dummy.words.filter(word => word.day === Number(day));
+	useEffect(() => {
+		fetch(`http://localhost:3001/words?day=${day}`)
+			.then(res => {
+				return res.json();
+			})
+			.then(data => {
+				setWords(data);
+			});
+	}, [day]);	// []는 1회만 실행시키고자 할 때
+
 
 	return (
 		<>
 			<h2>Day {day}</h2>
 			<table>
 				<tbody>
-					{wordList.map(word => (
+					{words.map(word => (
 						<Word word={word} key={word.id} />
 					))}
 				</tbody>
